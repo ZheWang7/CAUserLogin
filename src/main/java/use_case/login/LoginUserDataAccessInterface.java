@@ -27,4 +27,9 @@ public interface LoginUserDataAccessInterface {
      */
     User get(String username);
 
+    /**
+     * This method keeps track of which user is logged in.
+     * @param name the nameof the user
+     */
+    void setCurrentUser(String name);
 }
